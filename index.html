@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mes voyages</title>
-    <link href="./css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./JavaScript/script.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
 
   <body>
-    <header class="bg-transparent text-gray-800">
+    <header class="fixed top-0 left-0 w-full bg-white text-gray-800 z-50">
       <nav class="container mx-auto p-4 flex items-center justify-between">
         <div class="text-2xl font-bold">
           <a href="#" class="hover:text-gray-400">MesVoyages</a>
@@ -18,22 +22,22 @@
         <div class="hidden md:flex space-x-4">
           <a
             href="#"
-            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
             >Accueil</a
           >
           <a
             href="#"
-            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
             >Services</a
           >
           <a
             href="#"
-            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
             >À Propos</a
           >
           <a
             href="#"
-            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
             >Contact</a
           >
         </div>
@@ -67,19 +71,37 @@
         <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
       </div>
     </header>
-    <section class="relative w-full h-screen overflow-hidden">
+    <section class="relative w-full h-screen overflow-hidden grid grid-cols-12">
       <img
-        src="./medias/images/1er_img.jpg"
-        alt="Image de plein écran"
-        class="absolute inset-0 object-cover w-full h-full"
+        src="./medias/images/img1.webp"
+        alt="Image d'un court d'eau au Guatemala"
+        class="col-start-1 col-end-13 absolute inset-0 object-cover w-full h-full"
       />
       <div
-        class="absolute inset-0 flex items-center justify-center text-center text-white bg-black bg-opacity-50"
+        class="col-start-1 col-end-13 col-span-12 absolute inset-0 flex items-center text-white bg-black bg-opacity-45"
       >
         <div>
-          <h1 class="text-4xl font-bold mb-4">Bienvenue sur notre site !</h1>
-          <p class="text-xl">Découvrez notre incroyable service.</p>
+          <h1
+            class="text-6xl font-bold mt-[13rem] ml-11 font-serif"
+            id="h1_titre"
+          >
+            Bienvenue <br />dans mon monde
+          </h1>
         </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div>
+          <h2></h2>
+          <p></p>
+        </div>
+        <div>
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div>
+        <img src="" alt="" />
       </div>
     </section>
 
@@ -91,11 +113,39 @@
           <p class="text-xl font-bold">MesVoyages</p>
           <p class="mt-2">© 2024 MonSite. Tous droits réservés.</p>
         </div>
-        <div class="mt-4 md:mt-0">
-          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">Accueil</a>
-          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">Services</a>
-          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">À Propos</a>
-          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+        <div class="mt-4 md:mt-0 flex justify-center">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </footer>
