@@ -1,6 +1,21 @@
 #h1_titre {
   border-left: 5px solid white;
   padding-left: 2.5%;
+  animation: titre-animation 3s ease-in-out;
+}
+@keyframes titre-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .img_sec2 {
   transition: 1s;
