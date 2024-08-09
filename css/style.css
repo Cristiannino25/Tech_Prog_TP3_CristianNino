@@ -2,4 +2,12 @@
   border-left: 5px solid white;
   padding-left: 2.5%;
 }
-/* Section 2  de l'accueil*/
+.img_sec2 {
+  transition: 1s;
+}
+.img_sec2:hover {
+  transform: translateY(-3px);
+  border-radius: 5% 20%;
+}
+
+/* Section 3  de l'accueil*/
