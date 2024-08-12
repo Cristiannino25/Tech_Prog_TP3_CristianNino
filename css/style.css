@@ -17,12 +17,18 @@
     opacity: 1;
   }
 }
+
 .img_sec2 {
-  transition: 1s;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .img_sec2:hover {
-  transform: translateY(-3px);
-  border-radius: 5% 20%;
+  border: 2px solid #000000;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Section 3  de l'accueil*/
