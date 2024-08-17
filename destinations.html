@@ -7,6 +7,10 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="JavaScript/script.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -112,55 +116,65 @@
     </section>
     <!-- Section  images des destinations -->
     <section class="container-fluid grid grid-cols-12 pt-[2%] pb-[2%]">
-      <div class="col-span-12 flex justify-center">
-        <div
-          class="bg-white rounded-lg shadow-md p-4 w-[150px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
-        >
-          <img
-            src="medias/images/guatemala.webp"
-            alt="map du Guatemala"
-            class="w-full h-full"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-center font-serif">Guatemala</h3>
+      <div class="col-span-12 flex justify-center md:justify-evenly">
+        <a href="#guatemala">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 w-[150px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+          >
+            <img
+              src="medias/images/guatemala.webp"
+              alt="map du Guatemala"
+              class="w-full h-full"
+            />
+            <div class="p-4">
+              <h3 class="font-bold text-lg text-center font-serif">
+                Guatemala
+              </h3>
+            </div>
           </div>
-        </div>
-        <div
-          class="bg-white rounded-lg shadow-md p-4 w-[150px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
-        >
-          <img
-            src="medias/images/perou.webp"
-            alt="map de perou"
-            class="w-full h-full"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-center font-serif">Pérou</h3>
+        </a>
+        <a href="#perou">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 w-[150px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+          >
+            <img
+              src="medias/images/perou.webp"
+              alt="map de perou"
+              class="w-full h-full"
+            />
+            <div class="p-4">
+              <h3 class="font-bold text-lg text-center font-serif">Pérou</h3>
+            </div>
           </div>
-        </div>
-        <div
-          class="bg-white rounded-lg shadow-md p-4 w-[100px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
-        >
-          <img
-            src="medias/images/panama.webp"
-            alt="map du panama"
-            class="w-full h-full"
-          />
-          <div class="pt-4">
-            <h3 class="font-bold text-lg font-serif">Panama</h3>
+        </a>
+        <a href="#panama"
+          ><div
+            class="bg-white rounded-lg shadow-md p-4 w-[100px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+          >
+            <img
+              src="medias/images/panama.webp"
+              alt="map du panama"
+              class="w-full h-full"
+            />
+            <div class="pt-4">
+              <h3 class="font-bold text-lg font-serif">Panama</h3>
+            </div>
           </div>
-        </div>
-        <div
-          class="bg-white rounded-lg shadow-md p-4 w-[150px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
-        >
-          <img
-            src="medias/images/bresil.webp"
-            alt="map du"
-            class="w-full h-full"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-center font-serif">Brésil</h3>
+        </a>
+        <a href="#bresil"
+          ><div
+            class="bg-white rounded-lg shadow-md p-4 w-[150px] h-[150px] hover:bg-gray-700 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+          >
+            <img
+              src="medias/images/bresil.webp"
+              alt="map du"
+              class="w-full h-full"
+            />
+            <div class="p-4">
+              <h3 class="font-bold text-lg text-center font-serif">Brésil</h3>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     <div class="flex justify-center mb-4 mt-8">
@@ -171,7 +185,7 @@
 
     <!-- Section destination  -->
     <!-- Section Guatemala-->
-    <section class="pt-[5%] pb-[2%]">
+    <section class="pt-[5%] pb-[2%]" id="guatemala">
       <div class="container-fluid grid grid-cols-12 ml-[3%] mr-[3%]">
         <h2 class="col-span-12 text-2xl text-center text-bold font-serif pb-6">
           - Guatemala -
@@ -179,13 +193,13 @@
 
         <div class="col-span-12">
           <img
-            class="img"
+            class="img w-full"
             src="medias/images/guatemala1.webp"
             alt="image de la ville de antigua "
           />
         </div>
-        <div class="col-span-12">
-          <h3 class="pt-[5%] text-justify font-serif">
+        <div class="col-span-12 md:flex">
+          <h3 class="pt-[5%] text-justify font-serif md:w-[40%] 2xl:text-xl">
             Découvrez le Guatemala, un joyau caché au cœur de l’Amérique
             centrale ! Ce pays fascinant vous invite à explorer ses paysages
             diversifiés, allant des montagnes verdoyantes aux plages de sable
@@ -194,9 +208,9 @@
             impressionnants, comme Tikal, qui témoignent de l'héritage riche et
             mystérieux de cette ancienne civilisation.
           </h3>
-          <div class="flex justify-evenly pt-[8%]">
+          <div class="flex justify-evenly pt-[8%] md:w-[60%] md:pt-[5%]">
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
@@ -210,11 +224,11 @@
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-32 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-32 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-48"
                   ></div>
-                  <span class="text-lg font-bold">Aticlan</span>
+                  <span class="text-lg font-bold 2xl:text-2xl">Aticlan</span>
                   <p
-                    class="group-hover:opacity-100 w-56 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-56 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
                     Le volcan de Fuego est actif, haut de 3 763 m , situé près
                     d'Antigua, paysages spectaculaires.
@@ -223,7 +237,7 @@
               </div>
             </div>
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
@@ -237,11 +251,13 @@
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-60 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-60 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-48"
                   ></div>
-                  <span class="text-lg font-bold">San Pedro La Laguna </span>
+                  <span class="text-lg font-bold 2xl:text-2xl"
+                    >San Pedro La Laguna
+                  </span>
                   <p
-                    class="group-hover:opacity-100 w-56 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-56 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
                     Est un village pittoresque au bord du lac Atitlán, entouré
                     de volcans, connu pour son atmosphère tranquille.
@@ -254,7 +270,7 @@
       </div>
     </section>
     <!-- Section Pérou-->
-    <section class="pt-[5%] pb-[2%]">
+    <section class="pt-[5%] pb-[2%]" id="perou">
       <div class="container-fluid grid grid-cols-12 ml-[3%] mr-[3%]">
         <h2 class="col-span-12 text-2xl text-center text-bold font-serif pb-6">
           - Pérou -
@@ -262,13 +278,13 @@
 
         <div class="col-span-12">
           <img
-            class="img"
+            class="img w-full"
             src="medias/images/perou1.webp"
             alt="image de la ville de antigua "
           />
         </div>
-        <div class="col-span-12">
-          <h3 class="pt-[5%] text-justify font-serif">
+        <div class="col-span-12 md:flex">
+          <h3 class="pt-[5%] text-justify font-serif md:w-[40%] 2xl:text-xl">
             Le Pérou est une destination incontournable pour les amateurs de
             culture, d'histoire et de paysages époustouflants. Ce pays
             diversifié vous offre la possibilité de découvrir la majesté de
@@ -276,13 +292,11 @@
             chef-d'œuvre d'architecture et de mystère. En explorant Cusco,
             l'ancienne capitale de l'Empire inca, vous serez charmé par ses rues
             pavées et son riche patrimoine colonial. Le Pérou ne se limite pas à
-            ses merveilles historiques ; il vous invite aussi à découvrir des
-            paysages variés, des hautes montagnes de l'Altiplano aux jungles
-            luxuriantes de l'Amazonie.
+            ses merveilles historiques .
           </h3>
-          <div class="flex justify-evenly pt-[8%]">
+          <div class="flex justify-evenly pt-[8%] md:w-[60%] md:pt-[5%]">
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
@@ -296,11 +310,13 @@
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-60 h-full opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-60 h-full opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-52"
                   ></div>
-                  <span class="text-lg font-bold"> Rainbow mountain</span>
+                  <span class="text-lg font-bold 2xl:text-2xl">
+                    Rainbow mountain</span
+                  >
                   <p
-                    class="group-hover:opacity-100 w-52 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-52 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
                     Des paysages époustouflants avec ses couches colorées de
                     minéraux. Un trek inoubliable dans les Andes, riche en
@@ -310,7 +326,7 @@
               </div>
             </div>
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
@@ -324,12 +340,12 @@
                   class="absolute w-52 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-60 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-60 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-48"
                   ></div>
-                  <span class="text-lg font-bold">Ica </span>
+                  <span class="text-lg font-bold 2xl:text-2xl">Ica </span>
 
                   <p
-                    class="group-hover:opacity-100 w-52 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-52 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
                     Est réputée pour ses dunes de sable spectaculaires, ses
                     vignobles produisant du pisco, et ses mystérieux géoglyphes
@@ -343,7 +359,7 @@
       </div>
     </section>
     <!--Section Panama-->
-    <section class="pt-[5%] pb-[2%]">
+    <section class="pt-[5%] pb-[2%]" id="panama">
       <div class="container-fluid grid grid-cols-12 ml-[3%] mr-[3%]">
         <h2 class="col-span-12 text-2xl text-center text-bold font-serif pb-6">
           - Panama -
@@ -351,13 +367,13 @@
 
         <div class="col-span-12">
           <img
-            class="img"
+            class="img w-full"
             src="medias/images/panama1.webp"
             alt="image de la ville de panama city "
           />
         </div>
-        <div class="col-span-12">
-          <h3 class="pt-[5%] text-justify font-serif">
+        <div class="col-span-12 md:flex">
+          <h3 class="pt-[5%] text-justify font-serif md:w-[40%] 2xl:text-xl">
             Le Panama est une destination fascinante alliant modernité et
             nature. Vous serez ébloui par le célèbre Canal de Panama, une
             prouesse d'ingénierie reliant l'Atlantique au Pacifique. La ville de
@@ -366,12 +382,11 @@
             Toro et ses plages paradisiaques ou plongez dans la biodiversité du
             parc national de Coiba. Le Panama est aussi le lieu idéal pour
             découvrir des cultures diverses et goûter à une cuisine locale
-            savoureuse. Avec ses paysages variés et ses attractions uniques, le
-            Panama promet une expérience de voyage inoubliable
+            savoureuse.
           </h3>
-          <div class="flex justify-evenly pt-[8%]">
+          <div class="flex justify-evenly pt-[8%] md:w-[60%] md:pt-[5%]">
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
@@ -385,11 +400,13 @@
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-32 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-32 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-48"
                   ></div>
-                  <span class="text-xl font-bold">Santa Catalina </span>
+                  <span class="text-lg font-bold 2xl:text-2xl"
+                    >Santa Catalina
+                  </span>
                   <p
-                    class="group-hover:opacity-100 w-56 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-56 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
                     Est un paradis côtier pour le surf, avec ses plages
                     immaculées et ses eaux cristallines.
@@ -398,7 +415,7 @@
               </div>
             </div>
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
@@ -412,11 +429,13 @@
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-56 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-56 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-48"
                   ></div>
-                  <span class="text-xl font-bold">Volcan Baru </span>
+                  <span class="text-lg font-bold 2xl:text-2xl"
+                    >Volcan Baru
+                  </span>
                   <p
-                    class="group-hover:opacity-100 w-52 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-52 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
                     Est le sommet le plus élevé, offrant des vues spectaculaires
                     et des randonnées incroyables.
@@ -429,7 +448,7 @@
       </div>
     </section>
     <!--Section Bresil-->
-    <section class="pt-[5%] pb-[2%]">
+    <section class="pt-[5%] pb-[2%]" id="bresil">
       <div class="container-fluid grid grid-cols-12 ml-[3%] mr-[3%]">
         <h2 class="col-span-12 text-2xl text-center text-bold font-serif pb-6">
           - Brésil -
@@ -437,73 +456,75 @@
 
         <div class="col-span-12">
           <img
-            class="img"
-            src="medias/images/guatemala1.webp"
-            alt="image de la ville de antigua "
+            class="img w-full"
+            src="medias/images/bresil1.webp"
+            alt="image d'une plage du brésil"
           />
         </div>
-        <div class="col-span-12">
-          <h3 class="pt-[5%] text-justify font-serif">
-            Découvrez le Guatemala, un joyau caché au cœur de l’Amérique
-            centrale ! Ce pays fascinant vous invite à explorer ses paysages
-            diversifiés, allant des montagnes verdoyantes aux plages de sable
-            doré. Vous serez émerveillé par la majesté des volcans, tels que le
-            volcan de Fuego, toujours actif, et les sites archéologiques mayas
-            impressionnants, comme Tikal, qui témoignent de l'héritage riche et
-            mystérieux de cette ancienne civilisation.
+        <div class="col-span-12 md:flex">
+          <h3 class="pt-[5%] text-justify font-serif md:w-[40%] 2xl:text-xl">
+            Le Brésil est une destination enchanteresse, offrant une diversité
+            de paysages et de cultures fascinants. Explorez les plages
+            paradisiaques de Rio de Janeiro, telles que Copacabana et Ipanema,
+            ou découvrez l'exubérante forêt amazonienne, un véritable sanctuaire
+            de biodiversité. Le carnaval de Rio, avec ses défilés flamboyants et
+            ses rythmes entraînants, est une expérience culturelle unique. Ne
+            manquez pas les chutes d'Iguaçu, un spectacle naturel
+            impressionnant. Le Brésil vous séduira également par sa riche
+            gastronomie, avec des plats emblématiques comme la feijoada et les
+            caipirinhas rafraîchissantes.
           </h3>
-          <div class="flex justify-evenly pt-[8%]">
+          <div class="flex justify-evenly pt-[8%] md:w-[60%] md:pt-[5%]">
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
                   <img
                     class="w-full h-full"
-                    src="medias/images/guatemala2.webp"
-                    alt="photo du volcan fuego"
+                    src="medias/images/bresil2.webp"
+                    alt="photo de Manaus"
                   />
                 </div>
                 <div
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-32 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-32 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80 2xl:h-48"
                   ></div>
-                  <span class="text-xl font-bold">Aticlan</span>
+                  <span class="text-lg font-bold 2xl:text-2xl">Mamaus</span>
                   <p
-                    class="group-hover:opacity-100 w-56 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-56 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
-                    Le volcan de Fuego est actif, haut de 3 763 m , situé près
-                    d'Antigua, paysages spectaculaires.
+                    Est la porte d'entrée de l'Amazonie, offrant une immersion
+                    dans la jungle luxuriante.
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50"
+              class="relative group cursor-pointer overflow-hidden duration-500 w-60 h-60 bg-zinc-800 text-gray-50 2xl:w-80 2xl:h-80"
             >
               <div>
                 <div class="group-hover:scale-110 duration-500">
                   <img
                     class="w-full h-full"
-                    src="medias/images/guatemala3.webp"
-                    alt=" photo de la ville aticlan"
+                    src="medias/images/bresil3.webp"
+                    alt=" photo d'une plage de rio de jenero "
                   />
                 </div>
                 <div
                   class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
                 >
                   <div
-                    class="absolute -z-10 left-0 w-64 h-60 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900"
+                    class="absolute -z-10 left-0 w-64 h-60 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-blue-900 2xl:w-80"
                   ></div>
-                  <span class="text-xl font-bold">San Pedro La Laguna </span>
+                  <span class="text-lg font-bold 2xl:text-2xl">Amazonie</span>
                   <p
-                    class="group-hover:opacity-100 w-56 duration-500 opacity-0"
+                    class="group-hover:opacity-100 w-52 duration-500 opacity-0 2xl:text-xl 2xl:w-72"
                   >
-                    San Pedro La Laguna est un village pittoresque au bord du
-                    lac Atitlán, entouré de volcans, connu pour son atmosphère
-                    tranquille.
+                    L'Amazonie brésilienne est une forêt tropicale dense, riche
+                    en biodiversité et essentielle écologiquement.
                   </p>
                 </div>
               </div>
@@ -512,6 +533,12 @@
         </div>
       </div>
     </section>
+
+    <div class="flex justify-center mb-4 mt-8">
+      <div
+        class="w-[30%] h-[2px] bg-gradient-to-r from-gray-200 to-gray-500 rounded-full"
+      ></div>
+    </div>
 
     <footer class="bg-gray-800 text-white">
       <div
