@@ -40,4 +40,48 @@
   );
 }
 
-/* carousel*/
+/* Préparatifs*/
+.animated-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.animated-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate-title 2s ease-in-out;
+}
+
+@keyframes animate-title {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.animated-title span {
+  display: inline-block;
+  animation: animate-letter 2s ease-in-out;
+}
+
+@keyframes animate-letter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
