@@ -26,13 +26,10 @@
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.img_sec2:hover {
-  border: 2px solid #000000;
-  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
-}
 
 /* Page des destinations*/
-.img {
+.img,
+.img_sec2 {
   clip-path: polygon(
     30px 0%,
     100% 0,
