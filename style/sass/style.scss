@@ -1,8 +1,13 @@
+$h1-titre-border-color: white;
+$h1-titre-padding-left: 2.5%;
+$h1-titre-animation-duration: 3s;
+
 #h1_titre {
-  border-left: 5px solid white;
-  padding-left: 2.5%;
-  animation: titre-animation 3s ease-in-out;
+  border-left: 5px solid $h1-titre-border-color;
+  padding-left: $h1-titre-padding-left;
+  animation: titre-animation $h1-titre-animation-duration ease-in-out;
 }
+
 @keyframes titre-animation {
   0% {
     transform: translateY(100px);
@@ -18,13 +23,12 @@
   }
 }
 
+$img-sec2-box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+$img-sec2-transition-duration: 0.2s;
+
 .img_sec2 {
-  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  box-shadow: $img-sec2-box-shadow;
+  transition: all $img-sec2-transition-duration;
 }
 
 /* Page des destinations*/
@@ -41,11 +45,14 @@
 }
 
 /* Préparatifs*/
+$animated-title-text-transform: uppercase;
+$animated-title-letter-spacing: 0.1em;
+
 .animated-title {
   position: relative;
   display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: $animated-title-text-transform;
+  letter-spacing: $animated-title-letter-spacing;
 }
 
 .animated-title::before {
