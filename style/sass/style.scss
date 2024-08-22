@@ -33,6 +33,28 @@ $img-sec2-transition-duration: 0.2s;
 
 /* Page des destinations*/
 
+.underline-text {
+  position: relative;
+}
+
+.underline-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+}
+/* From Uiverse.io by adamgiebl */
+.card {
+  width: 190px;
+  height: 254px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
 /* Préparatifs*/
 $animated-title-text-transform: uppercase;
 $animated-title-letter-spacing: 0.1em;
