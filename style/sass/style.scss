@@ -32,17 +32,16 @@ $img-sec2-transition-duration: 0.2s;
 }
 
 /* Page des destinations*/
-.img,
-.img_sec2 {
-  clip-path: polygon(
-    30px 0%,
-    100% 0,
-    100% calc(100% - 30px),
-    calc(100% - 30px) 100%,
-    0 100%,
-    0% 30px
-  );
-}
+// .img,
+// .img_sec2 {
+//   clip-path: polygon(
+//     30px 0%,
+//     100% 0,
+//     100% calc(100% - 30px),
+//     calc(100% - 30px) 100%,
+//     0 100%,
+//     0% 30px
+//   );
 
 /* Préparatifs*/
 $animated-title-text-transform: uppercase;

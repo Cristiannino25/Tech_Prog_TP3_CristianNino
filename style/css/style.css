@@ -25,11 +25,6 @@
 }
 
 /* Page des destinations*/
-.img,
-.img_sec2 {
-  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-}
-
 /* Préparatifs*/
 .animated-title {
   position: relative;
