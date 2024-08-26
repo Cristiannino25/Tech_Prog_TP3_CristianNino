@@ -90,19 +90,19 @@
     </header>
     <!-- Section initial -->
     <section
-      class="relative w-full h-screen overflow-hidden container-fluid grid grid-cols-12"
+      class="container-fluid grid grid-cols-12 relative w-full h-screen overflow-hidden shadow-4xl"
     >
       <img
         src="./medias/images/preparatif.webp"
         alt="Image d'un court d'eau au Guatemala"
-        class="col-start-1 col-end-13 absolute inset-0 object-cover w-full h-full"
+        class="col-span-12 absolute inset-0 object-cover w-full h-full"
       />
       <div
-        class="col-start-1 col-end-13 col-span-12 absolute inset-0 flex items-center text-white bg-black bg-opacity-30"
+        class="col-span-12 absolute inset-0 flex items-center text-white bg-black bg-opacity-30"
       >
         <div>
           <h1
-            class="text-6xl font-bold mt-[10rem] ml-11 font-serif"
+            class="text-6xl font-bold mt-[90%] ml-11 font-serif"
             id="h1_titre"
           >
             Préparatifs
@@ -110,19 +110,158 @@
         </div>
       </div>
     </section>
-    <!-- Section Itinéraire -->
+
     <section class="container-fluid grid grid-cols-12 bg-white py-12">
       <h2 class="col-span-12 text-center text-xl font-serif animated-title">
         Préparer l’Aventure : Les Essentiels pour un Voyage Backpack Inoubliable
       </h2>
     </section>
+    <!-- Section Itinéraire -->
 
-    <!--Section  sac à dos-->
-    <section></section>
+    <section
+      id="itineraire"
+      class="container-fluid grid grid-cols-12 shadow-2xl bg-gray-100 py-10"
+    >
+      <h2
+        class="col-span-12 text-center font-serif text-3xl text-orange-500 font-bold mb-4"
+      >
+        L'itinéraire
+      </h2>
+      <div class="col-span-12 lg:col-span-6 lg:self-end">
+        <img
+          src="medias/images/itineraire.webp"
+          alt="image d'un itinéraire en dessin"
+          class="rounded-lg w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="col-span-12 container p-4 font-serif italic md:flex md:flex-wrap md:justify-center lg:col-span-6"
+      >
+        <p class="text-lg text-gray-600 2xl: mt-[10%]">
+          Choisir l'itinéraire de voyage approprié peut faire toute la
+          différence dans votre voyage. Voici quelques astuces pour vous aider à
+          planifier votre parcours idéal :
+        </p>
+
+        <div
+          class="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-1 gap-4 2xl:grid-cols-2"
+        >
+          <div
+            class="bg-white shadow-md rounded-lg p-4 border-l-4 border-orange-500"
+          >
+            <h3
+              class="fas fa-target mr-2 text-orange-500 text-lg font-bold mb-2"
+            >
+              Définissez votre style de voyage
+            </h3>
+            <p class="text-gray-600">
+              Êtes-vous un amoureux des villes, un passionné de la nature ou un
+              gourmet ? Connaître vos préférences vous aidera à vous concentrer
+              sur les destinations et les activités appropriées.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-4 border-l-4 border-orange-500"
+          >
+            <h3
+              class="fas fa-target mr-2 text-orange-500 text-lg font-bold mb-2"
+            >
+              Fixez des objectifs clairs
+            </h3>
+            <p class="text-gray-600">
+              Quels sont vos objectifs pour ce voyage ? Est-ce la relaxation,
+              l'aventure ou l'immersion culturelle ? Avoir des objectifs clairs
+              vous aidera à prioriser votre temps et vos ressources.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-4 border-l-4 border-orange-500"
+          >
+            <h3
+              class="text-lg font-bold fas fa-target mr-2 text-orange-500 mb-2"
+            >
+              Faites des recherches
+            </h3>
+            <p class="text-gray-600">
+              Lisez des blogs de voyage, des guides de voyage et des évaluations
+              en ligne pour avoir une idée de ce que vous pouvez attendre de vos
+              destinations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section Budget-->
     <section></section>
     <!-- Section Admin/sécurité-->
     <section></section>
+    <!--Section  sac à dos-->
+    <section id="sac-a-dos" class="bg-gray-100 py-20">
+      <header
+        class="bg-cover bg-center h-64 flex justify-center items-center"
+        style="background-image: url('backpacker-header.jpg')"
+      >
+        <h2 class="text-3xl text-white font-bold mb-4">
+          Pack Like a Pro: The Ultimate Guide to Preparing Your Backpack
+        </h2>
+      </header>
+      <div class="container mx-auto p-4 max-w-md">
+        <p class="text-lg text-gray-600 mb-4">
+          Before embarking on your next adventure, make sure you're prepared
+          with the right gear and packing strategy. In this section, we'll share
+          our top tips and tricks for packing the perfect backpack.
+        </p>
+        <div class="subsection mb-4">
+          <h3 class="text-2xl font-bold mb-2">Choose the Right Backpack:</h3>
+          <p class="text-lg text-gray-600 mb-2">
+            Factors to consider when selecting the perfect backpack for your
+            trip
+          </p>
+          <ul class="list-none mb-4">
+            <li class="mb-2">Size and capacity</li>
+            <li class="mb-2">Material and durability</li>
+            <li class="mb-2">Comfort and ergonomics</li>
+          </ul>
+        </div>
+        <div class="subsection mb-4">
+          <h3 class="text-2xl font-bold mb-2">Packing Essentials:</h3>
+          <p class="text-lg text-gray-600 mb-2">
+            Must-have items to include in your backpack
+          </p>
+          <ul class="list-none mb-4">
+            <li class="mb-2">Clothing and layers</li>
+            <li class="mb-2">Toiletries and hygiene</li>
+            <li class="mb-2">Electronics and accessories</li>
+          </ul>
+        </div>
+        <div class="subsection mb-4">
+          <h3 class="text-2xl font-bold mb-2">Packing Hacks:</h3>
+          <p class="text-lg text-gray-600 mb-2">
+            Tips and tricks for maximizing space and minimizing weight
+          </p>
+          <ul class="list-none mb-4">
+            <li class="mb-2">Roll your clothes</li>
+            <li class="mb-2">Use packing cubes</li>
+            <li class="mb-2">Wear your heaviest items</li>
+          </ul>
+        </div>
+        <div class="subsection mb-4">
+          <h3 class="text-2xl font-bold mb-2">Common Mistakes:</h3>
+          <p class="text-lg text-gray-600 mb-2">
+            What to avoid when packing your backpack
+          </p>
+          <ul class="list-none mb-4">
+            <li class="mb-2">Overpacking</li>
+            <li class="mb-2">Not checking the weather</li>
+            <li class="mb-2">Not packing essentials</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <footer class="bg-gray-800 text-white">
       <div
