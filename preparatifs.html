@@ -137,11 +137,13 @@
       <div
         class="col-span-12 container p-4 font-serif italic md:flex md:flex-wrap md:justify-center lg:col-span-6"
       >
-        <p class="text-lg text-gray-600 2xl: mt-[10%]">
+        <div
+          class="text-lg bg-gray-900 text-white h-[10%] text-center rounded-xl mt-[10%]"
+        >
           Choisir l'itinéraire de voyage approprié peut faire toute la
           différence dans votre voyage. Voici quelques astuces pour vous aider à
           planifier votre parcours idéal :
-        </p>
+        </div>
 
         <div
           class="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-1 gap-4 2xl:grid-cols-2"
@@ -281,7 +283,7 @@
             Conseils de <span class="text-orange-500">Sécurité</span> pour les
             Voyageurs
           </h2>
-          <ul class="list-none pl-0 mb-0 font-serif">
+          <ul class="list-none pl-0 mb-0 font-serif italic text-gray-600">
             <li class="mb-2">
               Recherchez votre destination et informez-vous sur les conditions
               locales.
@@ -293,7 +295,10 @@
           </ul>
         </div>
         <div class="grid justify-items-center my-[5%] lg:w-[33%]">
-          <img src="medias/images/securite_sante.webp" alt="" />
+          <img
+            src="medias/images/securite_sante.webp"
+            alt=" dessin d'un panneau d'attention "
+          />
         </div>
         <!--Santé-->
         <div class="bg-light-blue-200 p-4 rounded lg:w-[33%] lg:content-center">
@@ -301,7 +306,7 @@
             Conseils de <span class="text-orange-500">Santé</span> pour les
             Voyageurs
           </h2>
-          <ul class="list-none pl-0 mb-0 font-serif">
+          <ul class="list-none pl-0 mb-0 font-serif italic text-gray-600">
             <li class="mb-2">
               Consultez votre médecin avant de voyager, notamment si vous avez
               des conditions médicales préexistantes.
@@ -315,7 +320,7 @@
       </div>
       <div class="col-span-12 text-center py-5 font-serif font-bold">
         <h2>
-          Pour plus d'information aller visité :
+          Pour plus d'information visitez :
           <a href="https://voyage.gc.ca/voyager/avertissements ">
             <span class="text-orange-500 uppercase hover:text-red-500"
               >Santé Canada</span
@@ -326,66 +331,59 @@
     </section>
 
     <!--Section  sac à dos-->
-    <section id="sac-a-dos" class="bg-gray-100 py-20">
-      <header
-        class="bg-cover bg-center h-64 flex justify-center items-center"
-        style="background-image: url('backpacker-header.jpg')"
-      >
-        <h2 class="text-3xl text-white font-bold mb-4">
-          Pack Like a Pro: The Ultimate Guide to Preparing Your Backpack
+
+    <section
+      class="container-fluid grid grid-cols-12 bg-[#78553f57] p-4 rounded shadow-md"
+    >
+      <img
+        class="col-span-12 bg-white rounded-3xl sm:justify-self-center lg:col-span-4"
+        src="medias/images/backPack.webp"
+        alt="dessin d'un sac à dos "
+      />
+      <div class="col-span-12 lg:col-span-8">
+        <h2
+          class="text-orange-500 font-serif uppercase text-center text-2xl my-8"
+        >
+          Conseils pour un sac à dos parfait
         </h2>
-      </header>
-      <div class="container mx-auto p-4 max-w-md">
-        <p class="text-lg text-gray-600 mb-4">
-          Before embarking on your next adventure, make sure you're prepared
-          with the right gear and packing strategy. In this section, we'll share
-          our top tips and tricks for packing the perfect backpack.
-        </p>
-        <div class="subsection mb-4">
-          <h3 class="text-2xl font-bold mb-2">Choose the Right Backpack:</h3>
-          <p class="text-lg text-gray-600 mb-2">
-            Factors to consider when selecting the perfect backpack for your
-            trip
-          </p>
-          <ul class="list-none mb-4">
-            <li class="mb-2">Size and capacity</li>
-            <li class="mb-2">Material and durability</li>
-            <li class="mb-2">Comfort and ergonomics</li>
-          </ul>
-        </div>
-        <div class="subsection mb-4">
-          <h3 class="text-2xl font-bold mb-2">Packing Essentials:</h3>
-          <p class="text-lg text-gray-600 mb-2">
-            Must-have items to include in your backpack
-          </p>
-          <ul class="list-none mb-4">
-            <li class="mb-2">Clothing and layers</li>
-            <li class="mb-2">Toiletries and hygiene</li>
-            <li class="mb-2">Electronics and accessories</li>
-          </ul>
-        </div>
-        <div class="subsection mb-4">
-          <h3 class="text-2xl font-bold mb-2">Packing Hacks:</h3>
-          <p class="text-lg text-gray-600 mb-2">
-            Tips and tricks for maximizing space and minimizing weight
-          </p>
-          <ul class="list-none mb-4">
-            <li class="mb-2">Roll your clothes</li>
-            <li class="mb-2">Use packing cubes</li>
-            <li class="mb-2">Wear your heaviest items</li>
-          </ul>
-        </div>
-        <div class="subsection mb-4">
-          <h3 class="text-2xl font-bold mb-2">Common Mistakes:</h3>
-          <p class="text-lg text-gray-600 mb-2">
-            What to avoid when packing your backpack
-          </p>
-          <ul class="list-none mb-4">
-            <li class="mb-2">Overpacking</li>
-            <li class="mb-2">Not checking the weather</li>
-            <li class="mb-2">Not packing essentials</li>
-          </ul>
-        </div>
+        <ul
+          class="list-none pl-0 mb-0 text-white font-serif italic ml-[5%] md:ml-[15%] md:mr-[10%]"
+        >
+          <li class="mb-2">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            Faites une liste des choses à emporter et classez-les par priorité.
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            Choisissez des vêtements légers et pratiques qui peuvent être
+            facilement mélangés.
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            N'oubliez pas les accessoires essentiels tels que des chaussettes,
+            des sous-vêtements et un sac de toilette.
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            Utilisez des sacs à zip pour séparer les vêtements sales des
+            propres.
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            Placez les objets les plus lourds au fond du sac à dos pour
+            faciliter la portabilité.
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            Laissez un peu d'espace libre dans le sac pour les souvenirs et les
+            achats.
+          </li>
+          <img
+            class="hidden lg:block lg:place-content-end"
+            src="medias/images/backParkers.webp"
+            alt="illustration des voyageurs "
+          />
+        </ul>
       </div>
     </section>
 
