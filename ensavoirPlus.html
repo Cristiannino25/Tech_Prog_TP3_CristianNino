@@ -88,201 +88,183 @@
         </a>
       </div>
     </header>
-    <!-- Premiere section -->
-    <section
-      class="relative w-full h-screen overflow-hidden container-fluid grid grid-cols-12"
-      id="contaieur"
-    >
-      <img
-        src="medias/images/img1.webp"
-        alt="Image d'un court d'eau au Guatemala"
-        class="col-start-1 col-end-13 absolute inset-0 object-cover w-full h-full"
-      />
-      <div
-        class="col-start-1 col-end-13 col-span-12 absolute inset-0 flex items-center text-white bg-black bg-opacity-40"
-      >
-        <div>
-          <h1
-            class="text-5xl mt-[50%] 2xl:mt-[70%] ml-11 font-bold font-serif"
-            id="h1_titre"
-          >
-            <span class="text-orange-500">BIENVENUE</span> <br />
-            <span class="text-white">dans mon monde</span>
-          </h1>
-        </div>
-      </div>
-    </section>
 
     <!-- Formulaire-->
 
-    <section class="relative py-[5%] sm:max-w-xl sm:mx-auto">
-      <form
-        class="relative px-4 py-10 bg-gray-100 mx-8 md:mx-0 shadow-2xl rounded-3xl sm:p-10"
-        id="formulaire"
-        onsubmit=" return validateForm() "
-        novalidate
-      >
-        <h2
-          class="text-center font-serif text-2xl text-orange-500 uppercase font-bold"
+    <section class="container-fluid grid grid-cols-12 mt-[5%]">
+      <div class="col-span-12">
+        <img src="medias/images/formulaire.webp" alt="photo des ruines " />
+      </div>
+
+      <div class="col-span-12 relative pb-[10%] mt-[5%] sm:max-w-xl sm:mx-auto">
+        <form
+          class="relative px-4 py-10 bg-gray-100 mx-8 md:mx-0 shadow-2xl rounded-3xl sm:p-10"
+          id="formulaire"
+          onsubmit=" return validateForm() "
+          novalidate
         >
-          Laissez vos commentaires
-        </h2>
-        <div class="max-w-md mx-auto">
-          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="nom"
-                >Nom</label
-              >
-              <input
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                type="text"
-                id="nom"
-                name="nom"
-                placeholder="Nom de famille"
-                required
-              />
-              <div class="errorMessage text-red-500"></div>
+          <h2
+            class="text-center font-serif text-2xl text-orange-500 uppercase font-bold"
+          >
+            Laissez vos commentaires
+          </h2>
+          <div class="max-w-md mx-auto">
+            <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="nom"
+                  >Nom</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Nom de famille"
+                  required
+                />
+                <div class="errorMessage text-red-500"></div>
+              </div>
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="prenom"
+                  >Premon</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  placeholder="Prenom"
+                  required
+                />
+                <div class="errorMessage text-red-500"></div>
+              </div>
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="telephone"
+                  >Telephone</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="téléphone"
+                  required
+                />
+                <div class="errorMessage text-red-500"></div>
+              </div>
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="email"
+                  >email</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <div class="errorMessage text-red-500"></div>
+              </div>
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="ville"
+                  >ville</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="text"
+                  id="ville"
+                  name="ville"
+                  placeholder="ville"
+                  required
+                />
+                <div class="errorMessage text-red-500"></div>
+              </div>
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="pays"
+                  >Pays</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="text"
+                  id="pays"
+                  name="pays"
+                  placeholder="pays"
+                  required
+                />
+                <div class="errorMessage text-red-500"></div>
+              </div>
+              <div>
+                <label
+                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  for="genre"
+                  >Genre</label
+                >
+                <select
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  id="gender"
+                >
+                  <option value="male">Homme</option>
+                  <option value="female">Femme</option>
+                  <option value="other">autre</option>
+                </select>
+                <div class="errorMessage text-red-500"></div>
+              </div>
             </div>
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="prenom"
-                >Premon</label
-              >
-              <input
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                type="text"
-                id="prenom"
-                name="prenom"
-                placeholder="Prenom"
-                required
-              />
-              <div class="errorMessage text-red-500"></div>
-            </div>
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="telephone"
-                >Telephone</label
-              >
-              <input
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                type="tel"
-                id="telephone"
-                name="telephone"
-                placeholder="téléphone"
-                required
-              />
-              <div class="errorMessage text-red-500"></div>
-            </div>
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="email"
-                >email</label
-              >
-              <input
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
-              />
-              <div class="errorMessage text-red-500"></div>
-            </div>
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="ville"
-                >ville</label
-              >
-              <input
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                type="text"
-                id="ville"
-                name="ville"
-                placeholder="ville"
-                required
-              />
-              <div class="errorMessage text-red-500"></div>
-            </div>
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="pays"
-                >Pays</label
-              >
-              <input
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                type="text"
-                id="pays"
-                name="pays"
-                placeholder="pays"
-                required
-              />
-              <div class="errorMessage text-red-500"></div>
-            </div>
-            <div>
-              <label
-                class="font-semibold text-sm text-gray-600 pb-1 block"
-                for="genre"
-                >Genre</label
-              >
-              <select
-                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                id="gender"
-              >
-                <option value="male">Homme</option>
-                <option value="female">Femme</option>
-                <option value="other">autre</option>
-              </select>
-              <div class="errorMessage text-red-500"></div>
-            </div>
-          </div>
 
-          <div class="flex">
-            <input type="checkbox" id="infolettre" name="infolettre" />
-            <label
-              class="font-semibold text-sm text-gray-600 pb-1 block ml-[5%]"
-              for="infolettre"
-              >Ajouter l'info lettre</label
-            >
-          </div>
-          <div>
-            <label for="message" class="pt-5">Message </label>
-            <textarea
-              class="border rounded-lg px-3 py-2 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-              id="message"
-              name="message"
-              placeholder="Message"
-              required
-            >
-            </textarea>
-            <div class="errorMessage text-red-500"></div>
-          </div>
+            <div class="flex">
+              <input type="checkbox" id="infolettre" name="infolettre" />
+              <label
+                class="font-semibold text-sm text-gray-600 pb-1 block ml-[5%]"
+                for="infolettre"
+                >Ajouter l'info lettre</label
+              >
+            </div>
+            <div>
+              <label for="message" class="pt-5">Message </label>
+              <textarea
+                class="border rounded-lg px-3 py-2 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              >
+              </textarea>
+              <div class="errorMessage text-red-500"></div>
+            </div>
 
-          <div class="mt-5">
-            <button
-              class="py-2 px-4 bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
-              type="submit"
-            >
-              ENVOYER
-            </button>
+            <div class="mt-5">
+              <button
+                class="py-2 px-4 bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+                type="submit"
+              >
+                ENVOYER
+              </button>
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
+              <p
+                class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline"
+              >
+                Heure d'avoir vos commentaires
+              </p>
+              <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
+            </div>
           </div>
-          <div class="flex items-center justify-between mt-4">
-            <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-            <p
-              class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline"
-            >
-              Heure d'avoir vos commentaires
-            </p>
-            <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
 
     <footer class="bg-gray-800 text-white">
