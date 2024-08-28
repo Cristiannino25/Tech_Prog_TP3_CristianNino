@@ -91,28 +91,29 @@
 
     <!-- Formulaire-->
 
-    <section class="container-fluid grid grid-cols-12 mt-[5%]">
-      <div class="col-span-12">
-        <img src="medias/images/formulaire.webp" alt="photo des ruines " />
-      </div>
-
-      <div class="col-span-12 relative pb-[10%] mt-[5%] sm:max-w-xl sm:mx-auto">
+    <section
+      class="container-fluid grid grid-cols-12 mt-[20%] form-background lg:mt-[5%] bg-slate-500"
+      id="form-background"
+    >
+      <div
+        class="col-span-12 pb-[10%] mt-[5%] sm:w-[80%] sm:justify-self-center md:w-[60%]"
+      >
         <form
-          class="relative px-4 py-10 bg-gray-100 mx-8 md:mx-0 shadow-2xl rounded-3xl sm:p-10"
+          class="relative px-4 py-10 bg-gray-900 mx-8 md:mx-0 shadow-3xl rounded-3xl"
           id="formulaire"
           onsubmit=" return validateForm() "
           novalidate
         >
           <h2
-            class="text-center font-serif text-2xl text-orange-500 uppercase font-bold"
+            class="text-center font-serif text-xl text-orange-400 uppercase font-bold mb-8"
           >
             Laissez vos commentaires
           </h2>
-          <div class="max-w-md mx-auto">
+          <div class="mx-[5%]">
             <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="nom"
                   >Nom</label
                 >
@@ -128,7 +129,7 @@
               </div>
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="prenom"
                   >Premon</label
                 >
@@ -144,7 +145,7 @@
               </div>
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="telephone"
                   >Telephone</label
                 >
@@ -160,7 +161,7 @@
               </div>
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="email"
                   >email</label
                 >
@@ -176,7 +177,7 @@
               </div>
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="ville"
                   >ville</label
                 >
@@ -192,7 +193,7 @@
               </div>
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="pays"
                   >Pays</label
                 >
@@ -208,7 +209,7 @@
               </div>
               <div>
                 <label
-                  class="font-semibold text-sm text-gray-600 pb-1 block"
+                  class="font-semibold text-sm text-white pb-1 block"
                   for="genre"
                   >Genre</label
                 >
@@ -227,13 +228,13 @@
             <div class="flex">
               <input type="checkbox" id="infolettre" name="infolettre" />
               <label
-                class="font-semibold text-sm text-gray-600 pb-1 block ml-[5%]"
+                class="font-semibold text-sm text-white pb-1 block ml-[5%]"
                 for="infolettre"
                 >Ajouter l'info lettre</label
               >
             </div>
             <div>
-              <label for="message" class="pt-5">Message </label>
+              <label for="message" class="pt-5 text-white">Commentaire </label>
               <textarea
                 class="border rounded-lg px-3 py-2 mb-5 text-sm w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 id="message"
@@ -247,7 +248,7 @@
 
             <div class="mt-5">
               <button
-                class="py-2 px-4 bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+                class="py-2 px-4 bg-orange-600 hover:bg-orange-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
                 type="submit"
               >
                 ENVOYER
@@ -256,10 +257,8 @@
             <div class="flex items-center justify-between mt-4">
               <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
               <p
-                class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline"
-              >
-                Heure d'avoir vos commentaires
-              </p>
+                class="text-xs text-gray-100 uppercase dark:text-gray-100 hover:underline"
+              ></p>
               <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
             </div>
           </div>
