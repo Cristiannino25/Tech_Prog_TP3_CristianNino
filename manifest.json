@@ -1,0 +1,35 @@
+{
+  "name": "Mes Voyages",
+  "short_name": "Mvg",
+  "icons": [
+    {
+      "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-48.webp",
+      "sizes": "48x48",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-144.webp",
+      "sizes": "144x144",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f2937"
+}

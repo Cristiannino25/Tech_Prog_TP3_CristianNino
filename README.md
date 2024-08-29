@@ -20,7 +20,6 @@ Ce blog est né de ma passion pour les voyages et la découverte de nouveaux hor
 ======================
 
 - **Navigation** : utilisez le menu de navigation en haut de page pour accéder aux différentes sections du blog.
-- **Recherche** : utilisez la barre de recherche pour trouver des articles spécifiques ou des destinations particulières.
 
 ## **Contribution et feedback**
 
@@ -29,11 +28,10 @@ Ce blog est né de ma passion pour les voyages et la découverte de nouveaux hor
 - **Commentaires** : n'hésitez pas à laisser des commentaires sur les articles pour partager vos propres expériences et conseils.
 - **Suggestions** : si vous avez des suggestions d'articles ou de destinations à couvrir, n'hésitez pas à me les faire savoir.
 
-## **Licence et copyright**
+## **copyright**
 
 =======================
 
-- **Licence** : ce blog est sous licence Creative Commons Attribution-NonCommercial.
 - **Copyright** : tous les droits réservés, sauf mention contraire.
 
 ## **Mise à jour**

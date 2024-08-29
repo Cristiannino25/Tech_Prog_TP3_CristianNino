@@ -108,8 +108,15 @@ $animated-title-letter-spacing: 0.1em;
     transform: translateY(0);
   }
 }
+
+// formulaire
 #form-background {
   background-image: url("https://images.pexels.com/photos/6942988/pexels-photo-6942988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center;
+}
+.form_bg {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 5px solid rgb(248, 243, 243);
 }
