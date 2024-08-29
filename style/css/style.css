@@ -103,6 +103,6 @@ html {
 
 .form_bg {
   background-color: transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(19px);
   border: 5px solid rgb(248, 243, 243);
 }

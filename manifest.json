@@ -31,5 +31,8 @@
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#1f2937"
+  "theme_color": "#1f2937",
+  "description": "Découvrez ma passion des voyages et quelque conseils pour vous aidez a faire le votre.",
+  "orientation": "natural",
+  "lang": "fr"
 }
