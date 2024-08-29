@@ -1,8 +1,8 @@
 ///Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v1";
+const CACHE_NAME = "static-cache-v2";
 
 //Add list of files to cache here.
-const FILES_TO_CACHE = ["offline.html", "index.html"];
+const FILES_TO_CACHE = ["offline.html"];
 
 // INSTALLATION
 self.addEventListener("install", (evt) => {
