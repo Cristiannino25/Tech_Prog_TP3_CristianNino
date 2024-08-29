@@ -3,9 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mes voyages</title>
+    <link href="style/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javaScript/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <!-- Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="Mes voyages" />
+    <link rel="apple-touch-icon" href="medias/icons/maskable-icon-192.webp" />
+
+    <meta name="description" content="blogue de voyage" />
+    <meta name="theme-color" content="#1f2937" />
+
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
   </head>
+
   <body>
-    <h1>JE CROIS QU'IL Y A UN PROBLÈME AVEC VOTRE INTERNET.</h1>
+    <!--  nav menu -->
+    <header class="fixed top-0 left-0 w-full bg-gray-800 text-white z-50">
+      <nav class="container mx-auto p-4 flex items-center justify-between">
+        <div class="text-2xl font-bold">
+          <a href="index.html" class="hover:text-gray-400">MesVoyages</a>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="index.html"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
+            >Accueil</a
+          >
+          <a
+            href="destinations.html"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
+            >Destinations</a
+          >
+          <a
+            href="preparatifs.html"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
+            >Préparatifs</a
+          >
+          <a
+            href="ensavoirPlus.html"
+            class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded font-bold font-serif"
+            >En savoir plus
+          </a>
+        </div>
+        <button
+          id="menu-toggle"
+          class="md:hidden px-3 py-2 rounded focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-gray-800 text-white absolute top-16 left-0 w-full hidden"
+      >
+        <a
+          href="index.html"
+          class="block px-4 py-2 hover:bg-gray-700 font-bold font-serif"
+          >Accueil</a
+        >
+        <a
+          href="destinations.html"
+          class="block px-4 py-2 hover:bg-gray-700 font-bold font-serif"
+          >Destinations</a
+        >
+        <a
+          href="preparatifs.html"
+          class="block px-4 py-2 hover:bg-gray-700 font-bold font-serif"
+          >préparatifs</a
+        >
+        <a
+          href="ensavoirPlus.html"
+          class="block px-4 py-2 hover:bg-gray-700 font-bold font-serif"
+          >En savoir plus
+        </a>
+      </div>
+    </header>
+    <!-- Premiere section -->
+    <section
+      class="container-fluid grid grid-cols-12 offline-section pt-[10%] bg-gray-100"
+    >
+      <div
+        class="col-span-12 bg-gray-100 p-8 flex flex-col justify-center lg:col-span-4"
+      >
+        <h2
+          class="text-3xl font-bold text-orange-500 mb-4 font-serif uppercase"
+        >
+          hors connexion
+        </h2>
+        <p class="text-lg text-gray-600">
+          Il semble que vous soyez hors ligne. Veuillez vérifier votre connexion
+          Internet et réessayer.
+        </p>
+      </div>
+      <div class="col-span-12 bg-gray-200 flex justify-center lg:col-span-7">
+        <img
+          class=""
+          src="medias/images/offline.webp"
+          alt="Illustration offline"
+        />
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white">
+      <div
+        class="container mx-auto p-4 flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="text-center md:text-left">
+          <p class="text-xl font-bold">MesVoyages</p>
+          <p class="mt-2">© 2024 MonSite. Tous droits réservés.</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex justify-center">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-gray-700 p-2 rounded mx-2"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
