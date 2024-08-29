@@ -32,7 +32,8 @@
       "src": "/Tech_Prog_TP3_CristianNino/medias/icons/Capture d’écran.webp",
       "sizes": "1280x582",
       "type": "image/webp",
-      "platform": "wide"
+      "form_factor": "wide",
+      "label": " screenshots d'accueil"
     }
   ],
   "start_url": "index.html",
