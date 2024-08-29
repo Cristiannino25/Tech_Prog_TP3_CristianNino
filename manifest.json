@@ -27,7 +27,14 @@
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "/Tech_Prog_TP3_CristianNino/medias/icons/Capture d’écran.webp",
+      "sizes": "1280x582",
+      "type": "image/webp",
+      "platform": "wide"
+    }
+  ],
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
