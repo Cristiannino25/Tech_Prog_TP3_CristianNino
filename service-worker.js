@@ -1,8 +1,14 @@
 ///Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v19";
+const CACHE_NAME = "static-cache-v21";
 
 //Add list of files to cache here.
-const FILES_TO_CACHE = ["offline.html", "style.css", "offline.webp"];
+const FILES_TO_CACHE = [
+  "offline.html",
+  "style/sass/style.scss",
+  "style/css/style.css",
+  "js/script.js",
+  "medias/images/offline.webp",
+];
 
 // INSTALLATION
 self.addEventListener("install", (evt) => {
