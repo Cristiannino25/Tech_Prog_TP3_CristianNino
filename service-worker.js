@@ -2,11 +2,7 @@
 const CACHE_NAME = "static-cache-v19";
 
 //Add list of files to cache here.
-const FILES_TO_CACHE = [
-  "offline.html",
-  "style/css/style.css",
-  "medias/images/offline.webp",
-];
+const FILES_TO_CACHE = ["offline.html", "style.css", "offline.webp"];
 
 // INSTALLATION
 self.addEventListener("install", (evt) => {
