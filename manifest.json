@@ -5,26 +5,22 @@
     {
       "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-48.webp",
       "sizes": "48x48",
-      "type": "image/webp",
-      "purpose": "any maskable"
+      "type": "image/webp"
     },
     {
       "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-144.webp",
       "sizes": "144x144",
-      "type": "image/webp",
-      "purpose": "any maskable"
+      "type": "image/webp"
     },
     {
       "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-192.webp",
       "sizes": "192x192",
-      "type": "image/webp",
-      "purpose": "any maskable"
+      "type": "image/webp"
     },
     {
       "src": "/Tech_Prog_TP3_CristianNino/medias/icons/maskable-icon-512.webp",
       "sizes": "512x512",
-      "type": "image/webp",
-      "purpose": "any maskable"
+      "type": "image/webp"
     }
   ],
   "screenshots": [
