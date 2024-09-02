@@ -1,9 +1,9 @@
-const CACHE_NAME = "static-cache-v17";
+const CACHE_NAME = "static-cache-v18";
 
 const FILES_TO_CACHE = [
-  "./offline.html",
-  "./style/css/style.css",
-  "./medias/images/offline.webp",
+  "offline.html",
+  "style/css/style.css",
+  "medias/images/offline.webp",
 ];
 
 self.addEventListener("install", (evt) => {
