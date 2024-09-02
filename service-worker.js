@@ -4,6 +4,7 @@ const CACHE_NAME = "static-cache-v14";
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
   "offline.html",
+  "style/sass/style.scss",
   "style/css/style.css",
   "medias/images/offline.webp",
 ];
