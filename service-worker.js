@@ -1,5 +1,5 @@
 ///Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v24";
+const CACHE_NAME = "static-cache-v25";
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -55,7 +55,7 @@ self.addEventListener("fetch", (evt) => {
         return caches
           .open(CACHE_NAME) // si échec , on renvoie la page offlione
           .then((cache) => {
-            return cache.match("offline.html");
+            return cache.match("FILES_TO_CACHE");
           });
       })
   );
