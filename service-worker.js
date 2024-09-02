@@ -1,5 +1,5 @@
 ///Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v22";
+const CACHE_NAME = "static-cache-v23";
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -44,19 +44,17 @@ self.addEventListener("activate", (evt) => {
 //ACCÈS À UNE RESSOURCE
 self.addEventListener("fetch", (evt) => {
   console.log("[ServiceWorker] Fetch", evt.request.url);
-  //Gestion de l'évènement fetch
   if (evt.request.mode !== "navigate") {
-    // Not a page navigation, bail.
     return;
   }
   evt.respondWith(
-    fetch(evt.request) // on tente de récupérer la ressource
-      .catch(() => {
-        return caches
-          .open(CACHE_NAME) // si échec , on renvoie la page offlione
-          .then((cache) => {
-            return cache.match("offline.html ");
-          });
-      })
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.match(evt.request.url).then((response) => {
+        if (response) {
+          return response;
+        }
+        return fetch(evt.request);
+      });
+    })
   );
 });
