@@ -49,6 +49,13 @@ function validateForm() {
     document.querySelector(`#${telephone.id} + .errorMessage`).textContent =
       "Le téléphone ne doit pas dépasser 20 caractères";
     erreur = true;
+  } else if (!/^\d+$/.test(telephone.value)) {
+    document.querySelector(`#${telephone.id} + .errorMessage`).textContent =
+      "Le numéro de téléphone ne doit contenir que des chiffres";
+    erreur = true;
+  } else {
+    document.querySelector(`#${telephone.id} + .errorMessage`).textContent = "";
+    erreur = false;
   }
 
   if (email.value === "") {
@@ -104,8 +111,9 @@ function validateForm() {
   }
 
   if (!erreur) {
-    // Envoyer le formulaire ici
-    alert("Formulaire envoyé avec succès !");
+    alert(
+      "Votre formulaire a été envoyé avec succès ! Nous vous contacterons si nécessaire. "
+    );
   }
 
   return !erreur;

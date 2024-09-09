@@ -1,11 +1,6 @@
-const CACHE_NAME = "static-cache-v27";
+const CACHE_NAME = "static-cache-v28";
 
-const FILES_TO_CACHE = [
-  "offline.html",
-  "style/css/style.css", // Assurez-vous que ce chemin est correct
-  "js/script.js",
-  "medias/images/offline.webp",
-];
+const FILES_TO_CACHE = ["offline.html"];
 
 self.addEventListener("install", (evt) => {
   console.log("[ServiceWorker] Install");
