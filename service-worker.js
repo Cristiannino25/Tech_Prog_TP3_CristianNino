@@ -1,12 +1,10 @@
-const CACHE_NAME = "static-cache-v32";
+const CACHE_NAME = "static-cache-v33";
 
 const FILES_TO_CACHE = [
   "offline.html",
   "style/css/style.css",
   "js/script.js",
-  "js/install.js",
   "medias/images/offline.webp",
-  "https://cdn.tailwindcss.com",
 ];
 
 self.addEventListener("install", (evt) => {
