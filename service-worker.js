@@ -1,13 +1,15 @@
-const CACHE_NAME = "static-cache-v28";
+const CACHE_NAME = "static-cache-v29";
 
-const FILES_TO_CACHE = ["offline.html"];
+const FILES_TO_CACHE = "offline.html";
+
+const urlTochache = [FILES_TO_CACHE, "style/css/style.css"];
 
 self.addEventListener("install", (evt) => {
   console.log("[ServiceWorker] Install");
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("[ServiceWorker] Pre-caching offline page");
-      return cache.addAll(FILES_TO_CACHE);
+      return cache.addAll(urlTochache);
     })
   );
   self.skipWaiting();
