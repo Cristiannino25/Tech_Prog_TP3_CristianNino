@@ -1,11 +1,11 @@
-const CACHE_NAME = "static-cache-v34";
+const CACHE_NAME = "static-cache-v35";
 
-const FILES_TO_CACHE = ["offline.html"];
-
-const CACHE_FILES = [
-  FILES_TO_CACHE,
+const FILES_TO_CACHE = [
+  "offline.html",
   "style/css/style.css",
   "medias/images/offline.webp",
+  "https://cdn.tailwindcss.com",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css",
 ];
 
 self.addEventListener("install", (evt) => {
@@ -13,7 +13,7 @@ self.addEventListener("install", (evt) => {
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("[ServiceWorker] Pre-caching offline page");
-      return cache.addAll(CACHE_FILES);
+      return cache.addAll(FILES_TO_CACHE);
     })
   );
   self.skipWaiting();
